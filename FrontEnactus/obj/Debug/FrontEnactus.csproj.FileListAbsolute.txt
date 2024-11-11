@@ -1,0 +1,11 @@
+D:\Dev\Proyectos\Enactus\FrontEnactus\FrontEnactus\bin\Debug\FrontEnactus.exe.config
+D:\Dev\Proyectos\Enactus\FrontEnactus\FrontEnactus\bin\Debug\FrontEnactus.exe
+D:\Dev\Proyectos\Enactus\FrontEnactus\FrontEnactus\bin\Debug\FrontEnactus.pdb
+D:\Dev\Proyectos\Enactus\FrontEnactus\FrontEnactus\obj\Debug\FrontEnactus.csproj.AssemblyReference.cache
+D:\Dev\Proyectos\Enactus\FrontEnactus\FrontEnactus\obj\Debug\FrontEnactus.Home.resources
+D:\Dev\Proyectos\Enactus\FrontEnactus\FrontEnactus\obj\Debug\FrontEnactus.WinLogin.resources
+D:\Dev\Proyectos\Enactus\FrontEnactus\FrontEnactus\obj\Debug\FrontEnactus.Properties.Resources.resources
+D:\Dev\Proyectos\Enactus\FrontEnactus\FrontEnactus\obj\Debug\FrontEnactus.csproj.GenerateResource.cache
+D:\Dev\Proyectos\Enactus\FrontEnactus\FrontEnactus\obj\Debug\FrontEnactus.csproj.CoreCompileInputs.cache
+D:\Dev\Proyectos\Enactus\FrontEnactus\FrontEnactus\obj\Debug\FrontEnactus.exe
+D:\Dev\Proyectos\Enactus\FrontEnactus\FrontEnactus\obj\Debug\FrontEnactus.pdb
