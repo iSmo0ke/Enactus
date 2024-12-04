@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="enactus_dbModelStoreContainer" CdmEntityContainer="enactus_dbEntities">
+    <EntitySetMapping Name="categorias">
+      <EntityTypeMapping TypeName="enactus_dbModel.categorias">
+        <MappingFragment StoreEntitySet="categorias">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nombre_categoria" ColumnName="nombre_categoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="detalles_pedidos">
+      <EntityTypeMapping TypeName="enactus_dbModel.detalles_pedidos">
+        <MappingFragment StoreEntitySet="detalles_pedidos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pedidos">
+      <EntityTypeMapping TypeName="enactus_dbModel.pedidos">
+        <MappingFragment StoreEntitySet="pedidos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="fecha_pedido" ColumnName="fecha_pedido" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="productos">
+      <EntityTypeMapping TypeName="enactus_dbModel.productos">
+        <MappingFragment StoreEntitySet="productos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nombre_producto" ColumnName="nombre_producto" />
+          <ScalarProperty Name="descripcion_producto" ColumnName="descripcion_producto" />
+          <ScalarProperty Name="id_rfid" ColumnName="id_rfid" />
+          <ScalarProperty Name="fecha_caducidad" ColumnName="fecha_caducidad" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="ubicacion" ColumnName="ubicacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="proveedores">
+      <EntityTypeMapping TypeName="enactus_dbModel.proveedores">
+        <MappingFragment StoreEntitySet="proveedores">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="contacto" ColumnName="contacto" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuarios">
+      <EntityTypeMapping TypeName="enactus_dbModel.usuarios">
+        <MappingFragment StoreEntitySet="usuarios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nombre_usuario" ColumnName="nombre_usuario" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="permisos" ColumnName="permisos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

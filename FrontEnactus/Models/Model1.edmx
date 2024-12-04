@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="enactus_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="categorias">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre_categoria" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="detalles_pedidos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_pedido" Type="int" Nullable="false" />
+          <Property Name="id_producto" Type="int" Nullable="false" />
+          <Property Name="cantidad" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="pedidos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_usuario" Type="int" Nullable="false" />
+          <Property Name="fecha_pedido" Type="date" Nullable="false" />
+          <Property Name="estado" Type="nvarchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="productos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre_producto" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="descripcion_producto" Type="nvarchar(max)" />
+          <Property Name="id_rfid" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="fecha_caducidad" Type="date" />
+          <Property Name="cantidad" Type="int" Nullable="false" />
+          <Property Name="ubicacion" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="proveedores">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="contacto" Type="nvarchar" MaxLength="100" />
+          <Property Name="direccion" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="usuarios">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre_usuario" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="permisos" Type="smallint" Nullable="false" />
+        </EntityType>
+        <Association Name="detalles_pedidos$detalles_pedidos_ibfk_1">
+          <End Role="pedidos" Type="Self.pedidos" Multiplicity="1" />
+          <End Role="detalles_pedidos" Type="Self.detalles_pedidos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="pedidos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="detalles_pedidos">
+              <PropertyRef Name="id_pedido" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="detalles_pedidos$detalles_pedidos_ibfk_2">
+          <End Role="productos" Type="Self.productos" Multiplicity="1" />
+          <End Role="detalles_pedidos" Type="Self.detalles_pedidos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="productos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="detalles_pedidos">
+              <PropertyRef Name="id_producto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pedidos$pedidos_ibfk_1">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1" />
+          <End Role="pedidos" Type="Self.pedidos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="pedidos">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="enactus_dbModelStoreContainer">
+          <EntitySet Name="categorias" EntityType="Self.categorias" Schema="enactus_db" store:Type="Tables" />
+          <EntitySet Name="detalles_pedidos" EntityType="Self.detalles_pedidos" Schema="enactus_db" store:Type="Tables" />
+          <EntitySet Name="pedidos" EntityType="Self.pedidos" Schema="enactus_db" store:Type="Tables" />
+          <EntitySet Name="productos" EntityType="Self.productos" Schema="enactus_db" store:Type="Tables" />
+          <EntitySet Name="proveedores" EntityType="Self.proveedores" Schema="enactus_db" store:Type="Tables" />
+          <EntitySet Name="usuarios" EntityType="Self.usuarios" Schema="enactus_db" store:Type="Tables" />
+          <AssociationSet Name="detalles_pedidos$detalles_pedidos_ibfk_1" Association="Self.detalles_pedidos$detalles_pedidos_ibfk_1">
+            <End Role="pedidos" EntitySet="pedidos" />
+            <End Role="detalles_pedidos" EntitySet="detalles_pedidos" />
+          </AssociationSet>
+          <AssociationSet Name="detalles_pedidos$detalles_pedidos_ibfk_2" Association="Self.detalles_pedidos$detalles_pedidos_ibfk_2">
+            <End Role="productos" EntitySet="productos" />
+            <End Role="detalles_pedidos" EntitySet="detalles_pedidos" />
+          </AssociationSet>
+          <AssociationSet Name="pedidos$pedidos_ibfk_1" Association="Self.pedidos$pedidos_ibfk_1">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="pedidos" EntitySet="pedidos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="enactus_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="categorias">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre_categoria" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="detalles_pedidos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_pedido" Type="Int32" Nullable="false" />
+          <Property Name="id_producto" Type="Int32" Nullable="false" />
+          <Property Name="cantidad" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="pedidos" Relationship="Self.detalles_pedidos_detalles_pedidos_ibfk_1" FromRole="detalles_pedidos" ToRole="pedidos" />
+          <NavigationProperty Name="productos" Relationship="Self.detalles_pedidos_detalles_pedidos_ibfk_2" FromRole="detalles_pedidos" ToRole="productos" />
+        </EntityType>
+        <EntityType Name="pedidos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_usuario" Type="Int32" Nullable="false" />
+          <Property Name="fecha_pedido" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="detalles_pedidos" Relationship="Self.detalles_pedidos_detalles_pedidos_ibfk_1" FromRole="pedidos" ToRole="detalles_pedidos" />
+          <NavigationProperty Name="usuarios" Relationship="Self.pedidos_pedidos_ibfk_1" FromRole="pedidos" ToRole="usuarios" />
+        </EntityType>
+        <EntityType Name="productos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre_producto" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="descripcion_producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="id_rfid" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="fecha_caducidad" Type="DateTime" Precision="0" />
+          <Property Name="cantidad" Type="Int32" Nullable="false" />
+          <Property Name="ubicacion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="detalles_pedidos" Relationship="Self.detalles_pedidos_detalles_pedidos_ibfk_2" FromRole="productos" ToRole="detalles_pedidos" />
+        </EntityType>
+        <EntityType Name="proveedores">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="contacto" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="usuarios">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre_usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="permisos" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="pedidos" Relationship="Self.pedidos_pedidos_ibfk_1" FromRole="usuarios" ToRole="pedidos" />
+        </EntityType>
+        <Association Name="detalles_pedidos_detalles_pedidos_ibfk_1">
+          <End Role="pedidos" Type="Self.pedidos" Multiplicity="1" />
+          <End Role="detalles_pedidos" Type="Self.detalles_pedidos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="pedidos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="detalles_pedidos">
+              <PropertyRef Name="id_pedido" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="detalles_pedidos_detalles_pedidos_ibfk_2">
+          <End Role="productos" Type="Self.productos" Multiplicity="1" />
+          <End Role="detalles_pedidos" Type="Self.detalles_pedidos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="productos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="detalles_pedidos">
+              <PropertyRef Name="id_producto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pedidos_pedidos_ibfk_1">
+          <End Role="usuarios" Type="Self.usuarios" Multiplicity="1" />
+          <End Role="pedidos" Type="Self.pedidos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="pedidos">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="enactus_dbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="categorias" EntityType="Self.categorias" />
+          <EntitySet Name="detalles_pedidos" EntityType="Self.detalles_pedidos" />
+          <EntitySet Name="pedidos" EntityType="Self.pedidos" />
+          <EntitySet Name="productos" EntityType="Self.productos" />
+          <EntitySet Name="proveedores" EntityType="Self.proveedores" />
+          <EntitySet Name="usuarios" EntityType="Self.usuarios" />
+          <AssociationSet Name="detalles_pedidos_detalles_pedidos_ibfk_1" Association="Self.detalles_pedidos_detalles_pedidos_ibfk_1">
+            <End Role="pedidos" EntitySet="pedidos" />
+            <End Role="detalles_pedidos" EntitySet="detalles_pedidos" />
+          </AssociationSet>
+          <AssociationSet Name="detalles_pedidos_detalles_pedidos_ibfk_2" Association="Self.detalles_pedidos_detalles_pedidos_ibfk_2">
+            <End Role="productos" EntitySet="productos" />
+            <End Role="detalles_pedidos" EntitySet="detalles_pedidos" />
+          </AssociationSet>
+          <AssociationSet Name="pedidos_pedidos_ibfk_1" Association="Self.pedidos_pedidos_ibfk_1">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="pedidos" EntitySet="pedidos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="enactus_dbModelStoreContainer" CdmEntityContainer="enactus_dbEntities">
+          <EntitySetMapping Name="categorias">
+            <EntityTypeMapping TypeName="enactus_dbModel.categorias">
+              <MappingFragment StoreEntitySet="categorias">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="nombre_categoria" ColumnName="nombre_categoria" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="detalles_pedidos">
+            <EntityTypeMapping TypeName="enactus_dbModel.detalles_pedidos">
+              <MappingFragment StoreEntitySet="detalles_pedidos">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
+                <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+                <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pedidos">
+            <EntityTypeMapping TypeName="enactus_dbModel.pedidos">
+              <MappingFragment StoreEntitySet="pedidos">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+                <ScalarProperty Name="fecha_pedido" ColumnName="fecha_pedido" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="productos">
+            <EntityTypeMapping TypeName="enactus_dbModel.productos">
+              <MappingFragment StoreEntitySet="productos">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="nombre_producto" ColumnName="nombre_producto" />
+                <ScalarProperty Name="descripcion_producto" ColumnName="descripcion_producto" />
+                <ScalarProperty Name="id_rfid" ColumnName="id_rfid" />
+                <ScalarProperty Name="fecha_caducidad" ColumnName="fecha_caducidad" />
+                <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+                <ScalarProperty Name="ubicacion" ColumnName="ubicacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="proveedores">
+            <EntityTypeMapping TypeName="enactus_dbModel.proveedores">
+              <MappingFragment StoreEntitySet="proveedores">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="contacto" ColumnName="contacto" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usuarios">
+            <EntityTypeMapping TypeName="enactus_dbModel.usuarios">
+              <MappingFragment StoreEntitySet="usuarios">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="nombre_usuario" ColumnName="nombre_usuario" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="permisos" ColumnName="permisos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
