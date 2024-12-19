@@ -1,34 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\",
+  "WorkspaceRootPath": "C:\\DEV\\Enactus\\Enactus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|d:\\dev\\proyectos\\enactus\\frontenactus\\frontenactus\\vista\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|solutionrelative:frontenactus\\vista\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|d:\\dev\\proyectos\\enactus\\frontenactus\\frontenactus\\vista\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|solutionrelative:frontenactus\\vista\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|d:\\dev\\proyectos\\enactus\\frontenactus\\frontenactus\\vista\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|c:\\dev\\enactus\\enactus\\frontenactus\\vista\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|solutionrelative:frontenactus\\vista\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|d:\\dev\\proyectos\\enactus\\frontenactus\\frontenactus\\utils\\dbcontextsingleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|C:\\DEV\\Enactus\\Enactus\\frontenactus\\vista\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|solutionrelative:frontenactus\\vista\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|c:\\dev\\enactus\\enactus\\frontenactus\\vista\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|solutionrelative:frontenactus\\vista\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|C:\\DEV\\Enactus\\Enactus\\frontenactus\\utils\\dbcontextsingleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|solutionrelative:frontenactus\\utils\\dbcontextsingleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\frontenactus\\models\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|C:\\DEV\\Enactus\\Enactus\\frontenactus\\models\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|solutionrelative:frontenactus\\models\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|d:\\dev\\proyectos\\enactus\\frontenactus\\frontenactus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|c:\\dev\\enactus\\enactus\\frontenactus\\vista\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|solutionrelative:frontenactus\\vista\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|C:\\DEV\\Enactus\\Enactus\\frontenactus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|solutionrelative:frontenactus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|d:\\dev\\proyectos\\enactus\\frontenactus\\frontenactus\\vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|c:\\dev\\enactus\\enactus\\frontenactus\\vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|solutionrelative:frontenactus\\vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|c:\\dev\\enactus\\enactus\\frontenactus\\vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|solutionrelative:frontenactus\\vista\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|c:\\dev\\enactus\\enactus\\frontenactus\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E636C756-7D7D-42C9-8AD7-9B0B14E60D0F}|FrontEnactus\\FrontEnactus.csproj|solutionrelative:frontenactus\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,81 +50,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Home.Designer.cs",
-              "DocumentMoniker": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Vista\\Home.Designer.cs",
-              "RelativeDocumentMoniker": "FrontEnactus\\Vista\\Home.Designer.cs",
-              "ToolTip": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Vista\\Home.Designer.cs",
-              "RelativeToolTip": "FrontEnactus\\Vista\\Home.Designer.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAQwJkAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Vista\\Login.cs",
+              "RelativeDocumentMoniker": "FrontEnactus\\Vista\\Login.cs",
+              "ToolTip": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Vista\\Login.cs",
+              "RelativeToolTip": "FrontEnactus\\Vista\\Login.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAowCsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T17:44:44.427Z",
+              "WhenOpened": "2024-12-04T23:39:48.98Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Home.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Vista\\Home.cs",
-              "RelativeDocumentMoniker": "FrontEnactus\\Vista\\Home.cs",
-              "ToolTip": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Vista\\Home.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FrontEnactus\\Vista\\Home.cs [Dise\u00F1o]",
+              "DocumentIndex": 7,
+              "Title": "Login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Vista\\Login.cs",
+              "RelativeDocumentMoniker": "FrontEnactus\\Vista\\Login.cs",
+              "ToolTip": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Vista\\Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrontEnactus\\Vista\\Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T17:43:41.967Z",
+              "WhenOpened": "2024-12-04T23:39:46.233Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Home.cs",
-              "DocumentMoniker": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Vista\\Home.cs",
-              "RelativeDocumentMoniker": "FrontEnactus\\Vista\\Home.cs",
-              "ToolTip": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Vista\\Home.cs",
-              "RelativeToolTip": "FrontEnactus\\Vista\\Home.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Vista\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "FrontEnactus\\Vista\\Login.Designer.cs",
+              "ToolTip": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Vista\\Login.Designer.cs",
+              "RelativeToolTip": "FrontEnactus\\Vista\\Login.Designer.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAowD4AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T17:39:20.408Z",
+              "WhenOpened": "2024-12-04T23:36:09.119Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "DbContextSingleton.cs",
-              "DocumentMoniker": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Utils\\DbContextSingleton.cs",
+              "DocumentMoniker": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Utils\\DbContextSingleton.cs",
               "RelativeDocumentMoniker": "FrontEnactus\\Utils\\DbContextSingleton.cs",
-              "ToolTip": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Utils\\DbContextSingleton.cs",
+              "ToolTip": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Utils\\DbContextSingleton.cs",
               "RelativeToolTip": "FrontEnactus\\Utils\\DbContextSingleton.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAkwB8AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowB0AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T16:02:09.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Program.cs",
-              "RelativeDocumentMoniker": "FrontEnactus\\Program.cs",
-              "ToolTip": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Program.cs",
-              "RelativeToolTip": "FrontEnactus\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswCQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T08:01:12.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Model1.Context.cs",
-              "DocumentMoniker": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Models\\Model1.Context.cs",
+              "DocumentMoniker": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Models\\Model1.Context.cs",
               "RelativeDocumentMoniker": "FrontEnactus\\Models\\Model1.Context.cs",
-              "ToolTip": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Models\\Model1.Context.cs",
+              "ToolTip": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Models\\Model1.Context.cs",
               "RelativeToolTip": "FrontEnactus\\Models\\Model1.Context.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T18:53:56.117Z",
               "EditorCaption": ""
@@ -120,14 +119,65 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Vista\\Login.cs",
-              "RelativeDocumentMoniker": "FrontEnactus\\Vista\\Login.cs",
-              "ToolTip": "D:\\Dev\\Proyectos\\Enactus\\FrontEnactus\\FrontEnactus\\Vista\\Login.cs",
-              "RelativeToolTip": "FrontEnactus\\Vista\\Login.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Program.cs",
+              "RelativeDocumentMoniker": "FrontEnactus\\Program.cs",
+              "ToolTip": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Program.cs*",
+              "RelativeToolTip": "FrontEnactus\\Program.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwCMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T17:37:24.02Z",
+              "WhenOpened": "2024-11-29T08:01:12.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.Designer.cs",
+              "DocumentMoniker": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Vista\\Home.Designer.cs",
+              "RelativeDocumentMoniker": "FrontEnactus\\Vista\\Home.Designer.cs",
+              "ToolTip": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Vista\\Home.Designer.cs",
+              "RelativeToolTip": "FrontEnactus\\Vista\\Home.Designer.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAowKMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:40:27.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.cs",
+              "DocumentMoniker": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Vista\\Home.cs",
+              "RelativeDocumentMoniker": "FrontEnactus\\Vista\\Home.cs",
+              "ToolTip": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Vista\\Home.cs",
+              "RelativeToolTip": "FrontEnactus\\Vista\\Home.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:40:00.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Vista\\Home.cs",
+              "RelativeDocumentMoniker": "FrontEnactus\\Vista\\Home.cs",
+              "ToolTip": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\Vista\\Home.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrontEnactus\\Vista\\Home.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:43:41.967Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\App.config",
+              "RelativeDocumentMoniker": "FrontEnactus\\App.config",
+              "ToolTip": "C:\\DEV\\Enactus\\Enactus\\FrontEnactus\\App.config",
+              "RelativeToolTip": "FrontEnactus\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-04T18:57:42.417Z",
               "EditorCaption": ""
             }
           ]

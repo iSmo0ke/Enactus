@@ -151,7 +151,7 @@ namespace FrontEnactus
 
         }
 
-        //Metodo para cargar productos
+        //Cargar productos a tabla
         private void CargarProductos()
         {
             try
@@ -171,7 +171,7 @@ namespace FrontEnactus
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al cargar productos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al cargar productos");
             }
         }
 

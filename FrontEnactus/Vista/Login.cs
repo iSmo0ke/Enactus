@@ -36,5 +36,12 @@ namespace FrontEnactus
         {
 
         }
+
+        private void AccesoButton_Click(object sender, EventArgs e)
+        {
+            Home newForm = new Home();
+            
+            newForm.Show();
+        }
     }
 }
