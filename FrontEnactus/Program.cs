@@ -19,24 +19,7 @@ namespace FrontEnactus
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //using (enactus_dbEntities db = new enactus_dbEntities())
-            //{
-            //    var list = db.usuarios.ToList();
-
-            //    foreach (var oGente in list)
-            //    {
-            //        MessageBox.Show(oGente.nombre_usuario);
-            //    }
-            //}
-
-            var dbSingleton = DbContextSingleton.Instance;
-            var listUrs = dbSingleton.usuarios.ToList();
-            foreach (var oGente in listUrs)
-            {
-                MessageBox.Show(oGente.nombre_usuario);
-            }
-
-            Application.Run(new Home());
+            Application.Run(new WinLogin());
 
 
         }

@@ -43,9 +43,10 @@
             this.Titulo.AutoSize = true;
             this.Titulo.Font = new System.Drawing.Font("Quicksand Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Titulo.ForeColor = System.Drawing.SystemColors.Window;
-            this.Titulo.Location = new System.Drawing.Point(92, 68);
+            this.Titulo.Location = new System.Drawing.Point(61, 44);
+            this.Titulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(397, 46);
+            this.Titulo.Size = new System.Drawing.Size(267, 31);
             this.Titulo.TabIndex = 0;
             this.Titulo.Text = "Acceder al sistema";
             this.Titulo.Click += new System.EventHandler(this.label1_Click);
@@ -53,27 +54,31 @@
             // AccesoButton
             // 
             this.AccesoButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.AccesoButton.Location = new System.Drawing.Point(220, 412);
+            this.AccesoButton.Location = new System.Drawing.Point(147, 268);
+            this.AccesoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AccesoButton.Name = "AccesoButton";
-            this.AccesoButton.Size = new System.Drawing.Size(138, 50);
+            this.AccesoButton.Size = new System.Drawing.Size(92, 32);
             this.AccesoButton.TabIndex = 1;
             this.AccesoButton.Text = "Acceder";
             this.AccesoButton.UseVisualStyleBackColor = false;
+            this.AccesoButton.Click += new System.EventHandler(this.AccesoButton_Click);
             // 
             // Username
             // 
-            this.Username.Location = new System.Drawing.Point(49, 200);
+            this.Username.Location = new System.Drawing.Point(33, 130);
+            this.Username.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(474, 26);
+            this.Username.Size = new System.Drawing.Size(317, 20);
             this.Username.TabIndex = 2;
             this.Username.Text = "Usuario";
             this.Username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Password
             // 
-            this.Password.Location = new System.Drawing.Point(49, 266);
+            this.Password.Location = new System.Drawing.Point(33, 173);
+            this.Password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(474, 26);
+            this.Password.Size = new System.Drawing.Size(317, 20);
             this.Password.TabIndex = 3;
             this.Password.Text = "Contraseña";
             this.Password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -82,18 +87,20 @@
             // ResetPsw
             // 
             this.ResetPsw.AutoSize = true;
-            this.ResetPsw.Location = new System.Drawing.Point(203, 316);
+            this.ResetPsw.Location = new System.Drawing.Point(135, 205);
+            this.ResetPsw.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ResetPsw.Name = "ResetPsw";
-            this.ResetPsw.Size = new System.Drawing.Size(168, 20);
+            this.ResetPsw.Size = new System.Drawing.Size(113, 13);
             this.ResetPsw.TabIndex = 4;
             this.ResetPsw.Text = "Recuperar contraseña";
             // 
             // NewUsr
             // 
             this.NewUsr.AutoSize = true;
-            this.NewUsr.Location = new System.Drawing.Point(199, 349);
+            this.NewUsr.Location = new System.Drawing.Point(133, 227);
+            this.NewUsr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NewUsr.Name = "NewUsr";
-            this.NewUsr.Size = new System.Drawing.Size(177, 20);
+            this.NewUsr.Size = new System.Drawing.Size(119, 13);
             this.NewUsr.TabIndex = 5;
             this.NewUsr.Text = "Registrar nuevo usuario";
             this.NewUsr.Click += new System.EventHandler(this.label2_Click);
@@ -101,9 +108,10 @@
             // ImgLogin
             // 
             this.ImgLogin.Image = global::FrontEnactus.Properties.Resources.Login;
-            this.ImgLogin.Location = new System.Drawing.Point(579, -1);
+            this.ImgLogin.Location = new System.Drawing.Point(386, -1);
+            this.ImgLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ImgLogin.Name = "ImgLogin";
-            this.ImgLogin.Size = new System.Drawing.Size(561, 612);
+            this.ImgLogin.Size = new System.Drawing.Size(374, 398);
             this.ImgLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ImgLogin.TabIndex = 6;
             this.ImgLogin.TabStop = false;
@@ -111,10 +119,10 @@
             // 
             // WinLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1141, 607);
+            this.ClientSize = new System.Drawing.Size(761, 395);
             this.Controls.Add(this.ImgLogin);
             this.Controls.Add(this.NewUsr);
             this.Controls.Add(this.ResetPsw);
@@ -122,6 +130,7 @@
             this.Controls.Add(this.Username);
             this.Controls.Add(this.AccesoButton);
             this.Controls.Add(this.Titulo);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "WinLogin";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogin)).EndInit();

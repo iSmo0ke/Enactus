@@ -9,16 +9,15 @@ namespace FrontEnactus.Utils
 {
     public class DbContextSingleton
     {
-        // Instancia privada estática
+        //Variable estatica para la unica instancia
         private static enactus_dbEntities _instance;
 
-        // Objeto para manejo de concurrencia en aplicaciones multihilo
+        // Objeto para no crear instancias simultaneamente
         private static readonly object _lock = new object();
 
         // Constructor privado para evitar instancias directas
         private DbContextSingleton() { }
 
-        // Propiedad para obtener la única instancia
         public static enactus_dbEntities Instance
         {
             get
